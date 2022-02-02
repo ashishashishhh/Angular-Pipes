@@ -1,0 +1,50 @@
+<div class="container">
+
+  <h1>Welcome To Angular Pipes </h1>
+
+  </div>
+
+<div class="container">
+  <div>
+    <tabset>
+     <tab heading="UpperCase" customClass="tabcolor">
+          <app-uppercase></app-uppercase>
+     </tab>
+     <tab heading="lowerCase" customClass="tabcolor">
+         <app-lowercase></app-lowercase>
+     </tab>
+     <tab heading="titleCase" customClass="tabcolor">
+      <app-titlecase></app-titlecase>
+     </tab>
+     <tab heading="Date" customClass="tabcolor">
+      <app-datecomponent></app-datecomponent>
+     </tab>
+    </tabset>
+
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <h1>Login Form</h1>
+  <form [formGroup]= "loginForm" (ngSubmit)= "onSubmit">
+  <div class="form-group">
+    <label id="user1">username</label>
+    <input for="user1" type="text" class="form-control" formControlName="username">
+    
+  </div>
+  <div class="form-group">
+    <label id="user2">password</label>
+    <input for="user2" type="text" class="form-control" formControlName="password">
+    
+  </div>
+    
+  <div class="form-group">
+    <label id="user2">Confirm password</label>
+    <input for="user3" type="text" class="form-control" formControlName="confirmpassword">
+    
+  </div>
+  <input type="submit" value="submit" name="submit">
+  </form>
+</div>
